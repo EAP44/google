@@ -6,6 +6,7 @@ import App from './App';
 import { StateContextProvider } from './contexts/StateContextProvider';
 import './global.css';
 
+
 ReactDom.render(
   <StateContextProvider>
     <Router>
