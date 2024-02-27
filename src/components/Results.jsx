@@ -17,8 +17,8 @@ export const Results = () => {
         getResults(`${location.pathname}/q=${searchTerm}&num=40`);
       }
     }
-  }, [searchTerm, location.pathname]);
-
+  }, [searchTerm, location.pathname, getResults]);
+  
   if (loading) return <Loading />;
 
   switch (location.pathname) {
